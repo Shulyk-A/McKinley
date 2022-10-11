@@ -192,14 +192,15 @@ summary {
   display: flex;
 }
 .container {
-  max-width: 1300px;
+  width: 1300px;
   padding: 15px;
 }
 .container-header {
   line-height: 35px;
   display: flex;
-  padding: 24px 15px;
+  padding: 24px 0px;
   border: 1px solid #000;
+  margin: 0 auto;
 }
 .container-header img {
   margin: 0 40px 0 0;
