@@ -178,7 +178,6 @@ summary {
 .body {
   font-family: "DM Sans";
 }
-
 .header {
 }
 .header__top {
@@ -195,12 +194,12 @@ summary {
 .container {
   max-width: 1300px;
   padding: 15px;
-  /* margin: 0 auto; */
 }
 .container-header {
   line-height: 35px;
   display: flex;
   padding: 24px 15px;
+  border: 1px solid #000;
 }
 .container-header img {
   margin: 0 40px 0 0;
@@ -213,19 +212,15 @@ summary {
   gap: 32px;
   font-size: 19px;
   color: #00486d;
+  margin-right: 160px;
 }
-.header__list li {
-  display: inline-block;
-}
+
 .header__tel {
   display: flex;
   gap: 32px;
+  justify-content: flex-end;
+}
 
-  margin-left: auto;
-}
-.header__tel li {
-  display: inline-block;
-}
 .header__phone {
   font-size: 17px;
   color: #00486d;
