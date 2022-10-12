@@ -298,7 +298,7 @@ summary {
   margin-bottom: 40px;
 }
 .column__content {
-  width: 397px;
+  min-width: 397px;
   padding: 41px 33px;
   border: 1px solid #e4ecf0;
   box-shadow: 0px 24px 24px rgba(0, 72, 109, 0.2);
@@ -316,4 +316,16 @@ summary {
   margin-bottom: 36px;
 }
 .Areas__botton {
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 35px;
+
+  color: #00486d;
+}
+.arrow-right {
+  border: 1px solid #00486d;
+  border-width: 0 1px 1px 0;
+  display: inline-block;
+  padding: 4px;
+  transform: rotate(-45deg);
 }
