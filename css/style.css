@@ -49,7 +49,6 @@ button::-moz-focus-inner {
 a,
 a:visited {
   text-decoration: none;
-  /* color: inherit; */
 }
 a:hover {
   text-decoration: none;
@@ -176,13 +175,12 @@ summary {
   display: list-item;
 }
 /* header */
-.body { 
-   max-width: 1440px;
+.body {
+  /* max-width: 1440px; */
   font-family: "DM Sans";
 }
 
 .header {
-
 }
 .header__top {
   background-color: #00486d;
@@ -196,8 +194,8 @@ summary {
   display: flex;
 }
 .container {
-  
-  padding: 0px 85px;
+  max-width: 1300px;
+  padding: 0px 15px;
   margin: 0 auto;
 }
 .container-header {
@@ -211,34 +209,33 @@ summary {
 .container-header img {
   margin-right: 40px;
 }
-.header__row{
-display: flex;
-justify-content: space-between;
-width: 100%
+.header__row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 .header__contact {
   align-items: center;
   display: flex;
-  
 }
 .header__list {
   display: flex;
   gap: 32px;
   font-size: 19px;
-  color: #00486d;
-  
 }
-.header__connection{
+.header-link {
+  color: #00486d;
+}
+.header__connection {
   display: flex;
   gap: 32px;
   align-items: center;
-  color: #00486d;
-  
 }
 
 .header__phone {
-  font-size: 17px; 
+  font-size: 17px;
   display: inline-block;
+  color: #00486d;
 }
 .button {
   display: inline-block;
@@ -248,12 +245,15 @@ width: 100%
   color: #fff;
   background: #00486d;
   border-radius: 4px;
+  line-height: 35px;
 }
 .Representation {
   display: flex;
   flex-direction: row;
   background-color: #00486d;
-    color: #00486d;
+  color: #00486d;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 .Representation__content {
   padding: 155px 0 0 85px;
@@ -275,9 +275,8 @@ width: 100%
   max-width: 563px;
   margin-bottom: 35px;
 }
-.Representation__button{
- 
-/*   
+.Representation__button {
+  /*   
   padding: 12px 24px; */
 }
 .Representation__img {
@@ -338,7 +337,6 @@ width: 100%
   background-image: url(../img/items/Vector-2.svg);
   background-repeat: no-repeat;
   background-position: bottom;
-  bottom
 }
 .column-title {
   font-size: 22px;
@@ -387,20 +385,16 @@ width: 100%
 .arrow:after {
   transform: rotate(45deg);
 }
-.Legal-Servicescontainer{
-     background: url(../img/fon/image-1.jpg) no-repeat;
-   background-size: cover;
-   width: 100%;
+.Legal-Servicescontainer {
+  background: url(../img/fon/image-1.jpg) no-repeat;
+  background-size: cover;
+  width: 100%;
 }
 .Legal-Services {
- 
-  
   /* position: relative; */
-
 }
 .Legal-Services__content {
   max-width: 423px;
-
 
   left: 0%;
   right: 0%;
@@ -413,8 +407,8 @@ width: 100%
 }
 .Legal-Services__text {
   font-size: 19px;
-line-height: 35px;
-color: #F2F6F7;
+  line-height: 35px;
+  color: #f2f6f7;
 }
 .Legal-Services__button {
 }
