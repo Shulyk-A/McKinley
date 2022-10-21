@@ -176,7 +176,6 @@ summary {
 }
 /* header */
 .body {
-  /* max-width: 1440px; */
   font-family: "DM Sans";
 }
 
@@ -190,9 +189,7 @@ summary {
   color: #99b6c5;
   padding: 8px 0px;
 }
-.header__nav {
-  display: flex;
-}
+
 .container {
   max-width: 1300px;
   padding: 0px 15px;
@@ -201,7 +198,7 @@ summary {
 .container-header {
   line-height: 35px;
   display: flex;
-  padding: 24px 85px;
+  padding: 24px 15px;
   width: 100%;
   align-items: center;
   color: #00486d;
@@ -275,10 +272,7 @@ summary {
   max-width: 563px;
   margin-bottom: 35px;
 }
-.Representation__button {
-  /*   
-  padding: 12px 24px; */
-}
+
 .Representation__img {
   display: block;
   background-color: #00486d;
@@ -291,7 +285,8 @@ summary {
   color: #00486d;
 }
 .Areas__container {
-  padding: 160px 0;
+  padding-top: 160px;
+  padding-bottom: 160px;
 }
 .Areas__title {
   margin-bottom: 25px;
@@ -385,32 +380,39 @@ summary {
 .arrow:after {
   transform: rotate(45deg);
 }
-.Legal-Servicescontainer {
-  background: url(../img/fon/image-1.jpg) no-repeat;
-  background-size: cover;
-  width: 100%;
-}
 .Legal-Services {
-  /* position: relative; */
+  background: url(../img/fon/image-1.jpg) no-repeat;
+  max-width: 1270px;
+  position: relative;
+  height: 680px;
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
+  margin: 0 auto;
+  color: #f2f6f7;
 }
 .Legal-Services__content {
-  max-width: 423px;
-
-  left: 0%;
-  right: 0%;
-  top: 0px;
-
+  min-width: 423px;
+  position: absolute;
   background: #00486d;
   border-radius: 2px;
+  padding: 53px 56px 72px 56px;
+  max-width: 423px;
 }
 .Legal-Services__title {
+  font-size: 35px;
+  line-height: 42px;
+  margin-bottom: 23px;
 }
 .Legal-Services__text {
   font-size: 19px;
   line-height: 35px;
-  color: #f2f6f7;
+  margin-bottom: 60px;
 }
 .Legal-Services__button {
-}
-.button {
+  background-color: #fff;
+  color: #00486d;
+  font-size: 18px;
+  line-height: 35px;
+  text-align: center;
 }
