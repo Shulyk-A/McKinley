@@ -176,7 +176,7 @@ summary {
 }
 /* header */
 .body {
-  font-family: "DM Sans";
+  font-family: "DM Sans", sans-serif;
 }
 
 .header {
@@ -258,13 +258,13 @@ summary {
   min-width: 864px;
 }
 .title {
-  font-family: "DM Serif Text";
-  font-size: 55px;
-  line-height: 67px;
+  font-family: "DM Serif Text", serif;
 }
 .Representation__title {
   max-width: 395px;
   margin-bottom: 25px;
+  font-size: 55px;
+  line-height: 67px;
 }
 .Representation__content p {
   font-size: 24px;
@@ -290,6 +290,8 @@ summary {
 }
 .Areas__title {
   margin-bottom: 25px;
+  font-size: 44px;
+  line-height: 1.2;
 }
 .column-subtitle {
   font-size: 24px;
@@ -401,7 +403,7 @@ summary {
 }
 .Legal-Services__title {
   font-size: 35px;
-  line-height: 42px;
+  line-height: 1.2;
   margin-bottom: 23px;
 }
 .Legal-Services__text {
@@ -415,4 +417,32 @@ summary {
   font-size: 18px;
   line-height: 35px;
   text-align: center;
+}
+.motto {
+  text-align: center;
+  color: #00486d;
+}
+.motto-container {
+  display: flex;
+  align-items: center;
+
+  padding-top: 134px;
+  padding-bottom: 134px;
+  position: relative;
+}
+.motto-title {
+  font-size: 32px;
+  line-height: 1.6;
+}
+.motto-items {
+}
+.motto-text {
+  font-size: 15px;
+  line-height: 2.33;
+}
+.motto-link {
+  position: absolute;
+  right: 0px;
+}
+.motto-arrow {
 }
