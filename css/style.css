@@ -259,6 +259,8 @@ summary {
 }
 .title {
   font-family: "DM Serif Text", serif;
+  font-size: 44px;
+  line-height: 1.2;
 }
 .Representation__title {
   max-width: 395px;
@@ -307,7 +309,7 @@ summary {
   margin-bottom: 40px;
 }
 .column__content {
-  min-width: 397px;
+  max-width: 397px;
   padding: 41px 33px;
   border: 1px solid #e4ecf0;
   box-shadow: 0px 24px 24px rgba(0, 72, 109, 0.2);
@@ -346,7 +348,8 @@ summary {
   margin-bottom: 36px;
   min-height: 140px;
 }
-.Areas__button {
+.Areas__button,
+.Recent-Articles-button {
   font-weight: 400;
   font-size: 19px;
   line-height: 35px;
@@ -425,10 +428,9 @@ summary {
 .motto-container {
   display: flex;
   align-items: center;
-
+  position: relative;
   padding-top: 134px;
   padding-bottom: 134px;
-  position: relative;
 }
 .motto-title {
   font-size: 32px;
@@ -442,7 +444,49 @@ summary {
 }
 .motto-link {
   position: absolute;
-  right: 0px;
+  right: 0%;
 }
 .motto-arrow {
+}
+.Recent-Articles {
+  padding-top: 155px;
+  padding-bottom: 160px;
+}
+.container {
+}
+.Recent-Articles-title {
+  margin-bottom: 60px;
+  color: #00486d;
+}
+
+.Recent-Articles-list {
+  display: flex;
+
+  gap: 40px;
+}
+.Recent-Articles-item {
+  /* width: calc((100%-110px) / 3); */
+  border: 1px solid #e4ecf0;
+  box-shadow: 0px 24px 24px rgba(0, 72, 109, 0.2);
+  border-radius: 2px;
+}
+.Recent-Articles-block {
+  padding-top: 40px;
+  padding-bottom: 41px;
+  padding-left: 33px;
+}
+.Recent-Articles-data {
+  font-size: 15px;
+  line-height: 1.26px;
+  color: #00486d;
+  margin-bottom: 18px;
+}
+.Recent-Articles-subtitle {
+  font-size: 22px;
+  line-height: 1.5;
+  color: #00486d;
+}
+.Recent-Articles-button {
+}
+.arrow {
 }
