@@ -357,33 +357,7 @@ summary {
   color: #00486d;
   position: relative;
 }
-
-/* Стрелка */
-
 .arrow {
-  display: block;
-  position: absolute;
-  top: 13px;
-  right: -30px;
-  width: 17px;
-  height: 1px;
-  background-color: #00486d;
-}
-.arrow:before,
-.arrow:after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 6px;
-  height: 1px;
-  background-color: #00486d;
-  transform: rotate(-45deg);
-  transform-origin: 100% 0%;
-}
-.arrow:after {
-  transform: rotate(45deg);
 }
 .Legal-Services {
   background: url(../img/fon/image-1.jpg) no-repeat;
@@ -428,7 +402,8 @@ summary {
 .motto-container {
   display: flex;
   align-items: center;
-  position: relative;
+  justify-content: space-between;
+
   padding-top: 134px;
   padding-bottom: 134px;
 }
@@ -444,8 +419,7 @@ summary {
   line-height: 2.33;
 }
 .motto-link {
-  position: absolute;
-  right: 0%;
+  /* margin-left: auto; */
 }
 .motto-arrow {
 }
@@ -478,7 +452,8 @@ summary {
   padding-left: 33px;
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
+  /* flex-grow: 1; */
+  flex: 1 1 auto;
 }
 .Recent-Articles-data {
   font-size: 15px;
@@ -492,7 +467,8 @@ summary {
   line-height: 1.5;
   margin-bottom: 29px;
   color: #00486d;
-  flex-grow: 1;
+  /* flex-grow: 1; */
+  flex: 1 1 auto;
 }
 
 .advice {
