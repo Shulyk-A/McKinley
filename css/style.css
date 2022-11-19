@@ -435,6 +435,7 @@ summary {
 .motto-title {
   font-size: 32px;
   line-height: 1.6;
+  margin-bottom: 16px;
 }
 .motto-items {
 }
@@ -461,11 +462,10 @@ summary {
 
 .Recent-Articles-list {
   display: flex;
-
   gap: 40px;
 }
 .Recent-Articles-item {
-  /* width: calc((100%-110px) / 3); */
+  width: calc((100%-110px) / 3);
   border: 1px solid #e4ecf0;
   box-shadow: 0px 24px 24px rgba(0, 72, 109, 0.2);
   border-radius: 2px;
@@ -474,6 +474,11 @@ summary {
   padding-top: 40px;
   padding-bottom: 41px;
   padding-left: 33px;
+  /* flex-wrap: wrap; */
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
 }
 .Recent-Articles-data {
   font-size: 15px;
@@ -485,8 +490,23 @@ summary {
   font-size: 22px;
   line-height: 1.5;
   color: #00486d;
+  /* flex: 1 1 auto; */
 }
-.Recent-Articles-button {
-}
+
 .arrow {
+}
+.advice {
+  padding-top: 135px;
+  padding-bottom: 176px;
+  background-color: #e4ecf0;
+  text-align: center;
+  color: #00486d;
+}
+.advice-title {
+  margin-bottom: 19px;
+}
+.advice-text {
+  font-size: 23px;
+  line-height: 1.82;
+  margin-bottom: 41px;
 }
