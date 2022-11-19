@@ -68,6 +68,7 @@ h6 {
   font-size: inherit;
   font-weight: 400;
 }
+
 /*--------------------*/
 
 /*! modern-normalize v1.0.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
@@ -283,14 +284,14 @@ summary {
   transform: translate(-104px, 56px);
   box-shadow: 0px 32px 24px rgba(0, 72, 109, 0.5);
 }
-.Areas {
+.areas {
   color: #00486d;
 }
-.Areas__container {
+.areas__container {
   padding-top: 160px;
   padding-bottom: 160px;
 }
-.Areas__title {
+.areas__title {
   margin-bottom: 25px;
   font-size: 44px;
   line-height: 1.2;
@@ -301,11 +302,11 @@ summary {
   max-width: 605px;
   margin-bottom: 51px;
 }
-.Areas__column {
+.areas__column {
   display: flex;
   gap: 40px;
 }
-.Areas__column img {
+.areas__column img {
   margin-bottom: 40px;
 }
 .column__content {
@@ -315,27 +316,9 @@ summary {
   box-shadow: 0px 24px 24px rgba(0, 72, 109, 0.2);
   border-radius: 2px;
 }
-.column__content::before {
-  content: "";
-  display: block;
-  width: 60px;
-  height: 64px;
+.areas-svg {
+  fill: #00486d;
   margin-bottom: 40px;
-}
-.lend::before {
-  background-image: url(../img/items/Vector.svg);
-  background-repeat: no-repeat;
-}
-
-.house:before {
-  background-image: url(../img/items/Vector-1.svg);
-  background-repeat: no-repeat;
-}
-
-.book:before {
-  background-image: url(../img/items/Vector-2.svg);
-  background-repeat: no-repeat;
-  background-position: bottom;
 }
 .column-title {
   font-size: 22px;
@@ -348,16 +331,16 @@ summary {
   margin-bottom: 36px;
   min-height: 140px;
 }
-.Areas__button,
+.areas__button,
 .Recent-Articles-button {
   font-weight: 400;
   font-size: 19px;
   line-height: 35px;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   color: #00486d;
-  position: relative;
 }
 .arrow {
+  margin-left: 12px;
 }
 .Legal-Services {
   background: url(../img/fon/image-1.jpg) no-repeat;
@@ -403,7 +386,6 @@ summary {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
   padding-top: 134px;
   padding-bottom: 134px;
 }
@@ -419,10 +401,8 @@ summary {
   line-height: 2.33;
 }
 .motto-link {
-  /* margin-left: auto; */
 }
-.motto-arrow {
-}
+
 .Recent-Articles {
   padding-top: 155px;
   padding-bottom: 160px;
@@ -452,8 +432,6 @@ summary {
   padding-left: 33px;
   display: flex;
   flex-direction: column;
-  /* flex-grow: 1; */
-  flex: 1 1 auto;
 }
 .Recent-Articles-data {
   font-size: 15px;
@@ -467,8 +445,7 @@ summary {
   line-height: 1.5;
   margin-bottom: 29px;
   color: #00486d;
-  /* flex-grow: 1; */
-  flex: 1 1 auto;
+  flex-grow: 1;
 }
 
 .advice {
@@ -485,4 +462,91 @@ summary {
   font-size: 23px;
   line-height: 1.82;
   margin-bottom: 41px;
+}
+.footer {
+  background-color: #00486d;
+  margin: 0 auto;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.container {
+}
+.footer-column {
+  display: flex;
+  gap: 40px;
+}
+.footer .logo {
+  fill: #fff;
+}
+
+.left-column {
+  min-width: 397px;
+}
+.adress-list {
+  font-size: 20px;
+  line-height: 1.75;
+  color: #99b6c5;
+  text-decoration: none;
+  font-style: normal;
+  margin-top: 40px;
+  margin-bottom: 64px;
+}
+.adress-link {
+  color: inherit;
+}
+.social-network {
+}
+.social-network-link {
+  font-size: 20px;
+  line-height: 1.75;
+  color: #99b6c5;
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.social-network-img {
+  fill: #99b6c5;
+  margin-right: 9px;
+}
+
+.right-column {
+  width: 396px;
+}
+.footer-text {
+  font-family: "DM Serif Text";
+  font-size: 28px;
+  line-height: 1.3;
+  color: #ffffff;
+  margin-bottom: 22px;
+}
+.email-area {
+  width: 100%;
+  height: 56px;
+  font-size: 19px;
+  line-height: 1.84px;
+  padding-left: 23px;
+  padding-right: 50px;
+  color: #00486d;
+  border: 1px solid #99b6c5;
+  border-radius: 2px;
+  background-color: #99b6c5;
+}
+.form-area {
+  position: relative;
+}
+.submit-button {
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  right: 0%;
+  margin-right: 9px;
+  margin-top: 8px;
+  background-color: #00486d;
+  border-radius: 2px;
+}
+.submit-button:focus,
+.submit-button:hover {
+  background-color: #133748;
+  transition: background-color 400ms ease;
 }
