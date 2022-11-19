@@ -465,20 +465,20 @@ summary {
   gap: 40px;
 }
 .Recent-Articles-item {
-  width: calc((100%-110px) / 3);
+  width: calc((100% - 80px) / 3);
   border: 1px solid #e4ecf0;
   box-shadow: 0px 24px 24px rgba(0, 72, 109, 0.2);
   border-radius: 2px;
+  display: flex;
+  flex-direction: column;
 }
 .Recent-Articles-block {
   padding-top: 40px;
-  padding-bottom: 41px;
+  padding-bottom: 40px;
   padding-left: 33px;
-  /* flex-wrap: wrap; */
-  min-height: 100%;
   display: flex;
   flex-direction: column;
-  flex: 1 1 auto;
+  flex-grow: 1;
 }
 .Recent-Articles-data {
   font-size: 15px;
@@ -487,14 +487,14 @@ summary {
   margin-bottom: 18px;
 }
 .Recent-Articles-subtitle {
+  max-width: 294px;
   font-size: 22px;
   line-height: 1.5;
+  margin-bottom: 29px;
   color: #00486d;
-  /* flex: 1 1 auto; */
+  flex-grow: 1;
 }
 
-.arrow {
-}
 .advice {
   padding-top: 135px;
   padding-bottom: 176px;
