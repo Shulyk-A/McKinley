@@ -19,21 +19,23 @@
       </p>
 
       <div class="container container-header">
-        <a href="./index.html"
-          ><img src="./img/image-logo.jpg" alt="logo of company"
-        /></a>
+        <a class="logo" href="./index.html"
+          ><svg width="130" height="31">
+            <use href="./img/items/symbol-defs.svg#icon-image-logo"></use>
+          </svg>
+        </a>
         <div class="header__row">
           <nav class="header__contact">
             <ul class="header__list">
-              <li><a class="header-link" href="#Services">Services</a></li>
-              <li><a class="header-link" href="#About">About</a></li>
-              <li><a class="header-link" href="#Articles">Articles</a></li>
-              <li><a class="header-link" href="#Contact">Contact</a></li>
+              <li><a class="header-link" href="#services">Services</a></li>
+              <li><a class="header-link" href="#about">About</a></li>
+              <li><a class="header-link" href="#articles">Articles</a></li>
+              <li><a class="header-link" href="#contact">Contact</a></li>
             </ul>
           </nav>
           <ul class="header__connection">
             <li>
-              <a class="header__phone" href="tel:(123)4567890"
+              <a class="header__phone link" href="tel:(123)4567890"
                 >(123) 456-7890</a
               >
             </li>
@@ -47,30 +49,34 @@
       </div>
     </header>
     <main>
-      <section class="Representation">
-        <div class="Representation__content">
-          <h1 class="Representation__title title">
-            Corporate Legal Representation
-          </h1>
-          <p>
-            We understand the difficulties and stress that your legal issues
-            bring. Our team is committed to providing you with the individual
-            attention, communication, and dedication you deserve.
-          </p>
-          <button type="button" class="button header__button">
-            Request Consultation
-          </button>
-        </div>
-
-        <img
-          class="Representation__img"
-          src="./img/fon/image.jpg"
-          alt="office building"
-        />
+      <section class="representation">
+           <div class="representation__content">
+           
+            <h1 class="representation__title title">
+              Corporate Legal Representation
+            </h1>
+            <p>
+              We understand the difficulties and stress that your legal issues
+              bring. Our team is committed to providing you with the individual
+              attention, communication, and dedication you deserve.
+            </p>
+            <button type="button" class="button header__button">
+              Request Consultation
+            </button>
+          </div>
+          <div class="representation-right">
+              <img class="representation__img" width="595" height="753"
+              src="./img/fon/image.jpg"
+              alt="office building"/>
+              <svg class="block-circle" width="208" height="208">
+              <use href="./img/items/symbol-defs.svg#icon-circle-1"></use>
+            </svg>
+          </div>
+                              
       </section>
       <section class="areas" id="Services">
         <div class="container areas__container">
-          <h2 class="areas__title title">areas of Practice</h2>
+          <h2 class="areas__title title">Areas of Practice</h2>
           <p class="column-subtitle">
             Our disciplined approach to resolving your legal issues will produce
             the best-possible outcome.
@@ -134,17 +140,17 @@
           </ul>
         </div>
       </section>
-      <section class="Legal-Services" id="About">
-        <div class="Legal-Services__content">
-          <h2 class="Legal-Services__title title">
+      <section class="legal-services" id="about">
+        <div class="legal-services__content">
+          <h2 class="legal-services__title title">
             Personalized<br />
             Legal Services
           </h2>
-          <p class="Legal-Services__text">
+          <p class="legal-services__text">
             One size does not fit all when it comes to your legal needs. We
             craft a team and strategy specific to your desired outcome.
           </p>
-          <a class="Legal-Services__button button" href="#">About Our Firm</a>
+          <a class="legal-services__button button" href="#">About Our Firm</a>
         </div>
       </section>
       <section class="motto">
@@ -169,24 +175,24 @@
           </a>
         </div>
       </section>
-      <section class="Recent-Articles">
+      <section class="recent-articles">
         <div class="container">
-          <h2 class="Recent-Articles-title title">Recent Articles</h2>
-          <ul class="Recent-Articles-list">
-            <li class="Recent-Articles-item">
+          <h2 class="recent-articles-title title">Recent Articles</h2>
+          <ul class="recent-articles-list">
+            <li class="recent-articles-item">
               <img
                 src="./img/fon/image-2.jpg"
                 alt="office corridor"
                 width="395"
               />
-              <div class="Recent-Articles-block">
-                <p class="Recent-Articles-data">
+              <div class="recent-articles-block">
+                <p class="recent-articles-data">
                   <time datetime="2020-12-13">December 13, 2020</time>
                 </p>
-                <h3 class="Recent-Articles-subtitle">
+                <h3 class="recent-articles-subtitle">
                   12 Things About Web Design Your Boss Wants To Know
                 </h3>
-                <a class="Recent-Articles-button" href=""
+                <a class="recent-articles-button" href=""
                   >Learn More<span class="arrow"
                     ><svg width="19" height="14">
                       <use
@@ -195,20 +201,20 @@
                 ></a>
               </div>
             </li>
-            <li class="Recent-Articles-item">
+            <li class="recent-articles-item">
               <img
                 src="./img/fon/image-3.jpg"
                 alt="man on the bench"
                 width="395"
               />
-              <div class="Recent-Articles-block">
-                <p class="Recent-Articles-data">
+              <div class="recent-articles-block">
+                <p class="recent-articles-data">
                   <time datetime="2020-12-10">December 10, 2020</time>
                 </p>
-                <h3 class="Recent-Articles-subtitle">
+                <h3 class="recent-articles-subtitle">
                   The History Of Web Design
                 </h3>
-                <a class="Recent-Articles-button" href=""
+                <a class="recent-articles-button" href=""
                   >Learn More<span class="arrow"
                     ><svg width="19" height="14">
                       <use
@@ -217,16 +223,16 @@
                 ></a>
               </div>
             </li>
-            <li class="Recent-Articles-item">
+            <li class="recent-articles-item">
               <img src="./img/fon/image-4.jpg" alt="table" width="395" />
-              <div class="Recent-Articles-block">
-                <p class="Recent-Articles-data">
+              <div class="recent-articles-block">
+                <p class="recent-articles-data">
                   <time datetime="2020-12-10">December 10, 2020</time>
                 </p>
-                <h3 class="Recent-Articles-subtitle">
+                <h3 class="recent-articles-subtitle">
                   How to improve Web Design Process
                 </h3>
-                <a class="Recent-Articles-button" href=""
+                <a class="recent-articles-button" href=""
                   >Learn More<span class="arrow"
                     ><svg width="19" height="14">
                       <use
@@ -248,80 +254,98 @@
         </button>
       </section>
     </main>
-    <footer class="footer">
-      <div class="container">
-        <ul class="footer-column">
-          <li class="left-column">
-            <a class="logo" href="./index.html"
-              ><svg width="130" height="31">
-                <use href="./img/items/symbol-defs.svg#icon-image-logo"></use>
-              </svg>
-            </a>
-            <address class="adress-list">
-              <ul>
+    <footer>
+      <div class="footer">
+        <div class="container">
+          <ul class="footer-column">
+            <li class="left-column">
+              <a class="logo" href="./index.html"
+                ><svg width="130" height="31">
+                  <use href="./img/items/symbol-defs.svg#icon-image-logo"></use>
+                </svg>
+              </a>
+              <address class="adress-list">
+                <ul>
+                  <li>
+                    <p>2972 Westheimer Road<br />Denver, CO 80021</p>
+                  </li>
+                  <li>
+                    <a class="adress-link link-footer" href="tel:(720)5550123"
+                      >(720) 555-0123</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="adress-link link-footer"
+                      href="mailto:info.denver@mckinley.com"
+                      >info.denver@mckinley.com</a
+                    >
+                  </li>
+                </ul>
+              </address>
+              <ul class="social-network">
                 <li>
-                  <p>2972 Westheimer Road<br />Denver, CO 80021</p>
+                  <a href="" class="social-network-link">
+                    <svg class="social-network-img" width="32" height="32">
+                      <use href="./img/items/symbol-defs.svg#facebook"></use>
+                    </svg>
+                    <span class="border">Facebook</span>
+                  </a>
                 </li>
                 <li>
-                  <a class="adress-link" href="tel:(720)5550123"
-                    >(720) 555-0123</a
-                  >
+                  <a href="" class="social-network-link">
+                    <svg class="social-network-img" width="32" height="32">
+                      <use href="./img/items/symbol-defs.svg#linkedin"></use>
+                    </svg>
+                    <span class="border">LinkedIn</span>
+                  </a>
                 </li>
                 <li>
-                  <a class="adress-link" href="mailto:info.denver@mckinley.com"
-                    >info.denver@mckinley.com</a
-                  >
+                  <a href="" class="social-network-link">
+                    <svg class="social-network-img" width="32" height="32">
+                      <use href="./img/items/symbol-defs.svg#twitter"></use>
+                    </svg>
+                    <span class="border">Twitter</span>
+                  </a>
                 </li>
               </ul>
-            </address>
-            <ul class="social-network">
-              <li>
-                <a href="" class="social-network-link">
-                  <svg class="social-network-img" width="32" height="32">
-                    <use href="./img/items/symbol-defs.svg#facebook"></use>
+            </li>
+            <li class="right-column">
+              <p class="footer-text">
+                Get legal news, advice, and best practices delivered to your
+                inbox.
+              </p>
+              <form class="form-area" action="">
+                <input
+                  class="email-area"
+                  type="email"
+                  tabindex="1"
+                  placeholder="Email Address"
+                  name="username"
+                />
+                <button class="submit-button" type="submit">
+                  <svg class="social-network-img" width="40" height="40">
+                    <use
+                      href="./img/items/symbol-defs.svg#icon-arrow-text-area"
+                    ></use>
                   </svg>
-                  Facebook
-                </a>
-              </li>
-              <li>
-                <a href="" class="social-network-link">
-                  <svg class="social-network-img" width="32" height="32">
-                    <use href="./img/items/symbol-defs.svg#linkedin"></use>
-                  </svg>
-                  LinkedIn
-                </a>
-              </li>
-              <li>
-                <a href="" class="social-network-link">
-                  <svg class="social-network-img" width="32" height="32">
-                    <use href="./img/items/symbol-defs.svg#twitter"></use>
-                  </svg>
-                  Twitter
-                </a>
-              </li>
-            </ul>
+                </button>
+              </form>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <ul class="under-footer">
+          <li class="under-footer-list">
+            <p class="under-footer-text">&#169; 2020 McKinley Legal Template 
+              &#8226;</p>
+            <a class="under-footer-link" href="https://webflow.com/"></a>Powered by Webflow</a
+            >
           </li>
-          <li class="right-column">
-            <p class="footer-text">
-              Get legal news, advice, and best practices delivered to your
-              inbox.
-            </p>
-            <form class="form-area" action="">
-              <input
-                class="email-area"
-                type="email"
-                tabindex="1"
-                placeholder="Email Address"
-                name="username"
-              />
-              <button class="submit-button" type="submit">
-                <svg class="social-network-img" width="40" height="40">
-                  <use
-                    href="./img/items/symbol-defs.svg#icon-arrow-text-area"
-                  ></use>
-                </svg>
-              </button>
-            </form>
+          <li class="under-footer-list">
+            <a class="under-footer-link" href="">Style Guide</a>
+            <a class="under-footer-link last" href="">Licensing</a>
           </li>
         </ul>
       </div>
